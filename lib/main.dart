@@ -1,4 +1,5 @@
 import 'package:awesome_notifications/awesome_notifications.dart';
+import 'package:file_notification/permission.dart';
 import 'package:file_notification/ui/diocrud.dart';
 
 
@@ -19,6 +20,7 @@ Future<void> main() async {
     debug: true,
   );
 
+  await requestStoragePermission();
 
   runApp(const MyApp());
 
